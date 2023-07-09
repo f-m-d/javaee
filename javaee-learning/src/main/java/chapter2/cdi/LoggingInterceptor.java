@@ -4,6 +4,7 @@
  */
 package chapter2.cdi;
 
+import chapter2.cdi.Qualifiers.Loggable;
 import java.util.logging.Logger;
 import javax.inject.Inject;
 import javax.interceptor.AroundInvoke;

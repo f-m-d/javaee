@@ -4,6 +4,8 @@
  */
 package chapter2.cdi;
 
+import chapter2.cdi.Qualifiers.EightDigits;
+import chapter2.cdi.Qualifiers.Loggable;
 import java.util.Random;
 import java.util.logging.Logger;
 import javax.inject.Inject;

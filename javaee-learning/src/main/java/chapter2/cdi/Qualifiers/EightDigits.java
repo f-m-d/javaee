@@ -1,24 +1,24 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/CDI/Interceptor.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/CDI/Qualifier.java to edit this template
  */
-package chapter2.cdi;
+package chapter2.cdi.Qualifiers;
 
 import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.ElementType.PARAMETER;
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
-import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
-import javax.interceptor.InterceptorBinding;
+import javax.inject.Qualifier;
 
 /**
  *
  * @author dauri
  */
-@Inherited
-@InterceptorBinding
+@Qualifier
 @Retention(RUNTIME)
-@Target({METHOD, TYPE})
-public @interface Loggable {
+@Target({METHOD, FIELD, PARAMETER, TYPE})
+public @interface EightDigits {
 }
