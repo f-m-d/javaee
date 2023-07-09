@@ -19,7 +19,8 @@ public class IsbnGenerator implements NumberGenerator{
     @Inject
     private Logger logger;
 
-
+    @Override
+    @Loggable
     public String generateNumber() {
     //    throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     String isbn = "13-84356" + Math.abs(new Random().nextInt());

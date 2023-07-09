@@ -19,6 +19,7 @@ public class IssnGenerator implements NumberGenerator{
     private Logger logger;
     
     @Override
+    @Loggable
     public String generateNumber() {
     //    throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     String issn = "8-" + Math.abs(new Random().nextInt());
