@@ -7,4 +7,8 @@
     <alternatives>
         <class> chapter2.cdi.MockGenerator</class>
     </alternatives>
+    
+    <interceptors>
+        <class>chapter2.cdi.LoggingInterceptor</class>
+    </interceptors>
 </beans>
