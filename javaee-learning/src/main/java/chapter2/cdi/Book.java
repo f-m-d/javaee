@@ -15,7 +15,10 @@ public class Book {
     private String description;
     private String number;
     
-    public Book() {
+    public Book(String title, Float price, String description) {
+        this.title=title;
+        this.price=price;
+        this.description=description;
     }
 
     public String getTitle() {

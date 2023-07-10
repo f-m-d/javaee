@@ -1,2 +1,12 @@
-com\airhacks\ping\boundary\PingResource.class
-com\airhacks\JAXRSConfiguration.class
+chapter2\cdi\Qualifiers\EightDigits.class
+chapter2\cdi\LoggingInterceptor.class
+chapter2\cdi\NumberGenerator.class
+chapter2\cdi\IsbnGenerator.class
+chapter2\cdi\MockGenerator.class
+chapter2\cdi\Qualifiers\ThirteenDigits.class
+chapter2\cdi\IssnGenerator.class
+chapter2\cdi\LoggingProducer.class
+chapter2\cdi\Qualifiers\Loggable.class
+chapter2\cdi\Main.class
+chapter2\cdi\BookService.class
+chapter2\cdi\Book.class
