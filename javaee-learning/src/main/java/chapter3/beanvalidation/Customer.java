@@ -24,6 +24,13 @@ public class Customer {
     private Date birthDate;
     private Address deliveryAddress;
 
+    public Customer(String firstName, String lastName, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+    }
+
+    
     public Customer() {
     }
 
