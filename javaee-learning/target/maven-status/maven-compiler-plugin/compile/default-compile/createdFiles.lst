@@ -1,8 +1,16 @@
 chapter2\cdi\Qualifiers\EightDigits.class
 chapter2\cdi\LoggingInterceptor.class
+chapter3\beanvalidation\CustomEmailConstraint$List.class
 chapter2\cdi\NumberGenerator.class
+chapter3\beanvalidation\Address.class
+chapter3\beanvalidation\Customer.class
 chapter2\cdi\IsbnGenerator.class
 chapter2\cdi\MockGenerator.class
+chapter3\beanvalidation\CustomEmailConstraint.class
+chapter3\beanvalidation\USA.class
+chapter3\beanvalidation\ZipCodeValidator.class
+chapter3\beanvalidation\ZipCode$List.class
+chapter3\beanvalidation\ZipCode.class
 chapter2\cdi\Qualifiers\ThirteenDigits.class
 chapter2\cdi\IssnGenerator.class
 chapter2\cdi\LoggingProducer.class
