@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
  *
  * @author dauri
  */
-class Address {
+public class Address {
     
     
     @NotNull
@@ -28,6 +28,16 @@ class Address {
     public Address() {
     }
 
+    public Address(String street1, String city, String zipCode) {
+        this.street1 = street1;
+        this.city = city;
+        this.zipCode = zipCode;
+    }
+
+
+
+    
+    
     public String getStreet1() {
         return street1;
     }
