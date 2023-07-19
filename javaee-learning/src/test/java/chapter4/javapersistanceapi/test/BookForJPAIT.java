@@ -47,47 +47,46 @@ public class BookForJPAIT {
     }
     
     
-//    @Test
-//    public void shouldCreateH2G2Book() throws Exception{
-//        // Create an instance of BookForJPA
-//        BookForJPA b = new BookForJPA();
-//        b.setTitle("H2G2");
-//        b.setDescription("A Famous cookbook for Java EE learning!!");
-//        b.setPrice(12.5F);
-//        b.setIsbn("1-84023-742-2");
-//        b.setNbOfPages(354);
-//        b.setIllustrations(false);
-//        
-//        
-//        //Start EntityTransaction, persist the book and close all
-//        et.begin();
-//        em.persist(b);
-//        et.commit();
-//        
-//        assertNotNull("Id should not be null", b.getId());
-//        
-//        
-//        // Retrieves all the books from database
-//        b = em.createNamedQuery("findBookH2G2", BookForJPA.class).getSingleResult();
-//        
-//        assertEquals("A Famous cookbook for Java EE learning!!", b.getDescription());
-//    }
-//    
-//    
-//    @Test(expected = ConstraintViolationException.class)
-//    public void shouldRaiseConstraintViolationExceptionNullTitle(){
-//        BookForJPA b = new BookForJPA();
-//        // It will rais an exception for this one
-//        //b.setTitle("H2G2");
-//        b.setDescription("A Famous cookbook for Java EE learning!!");
-//        b.setPrice(12.5F);
-//        b.setIsbn("1-84023-742-2");
-//        b.setNbOfPages(354);
-//        b.setIllustrations(false);
-//        
-//        em.persist(b);
-//    }
-//    
+    @Test
+    public void shouldCreateH2G2Book() throws Exception{
+        // Create an instance of BookForJPA
+        BookForJPA b = new BookForJPA();
+        b.setTitle("H2G2");
+        b.setDescription("A Famous cookbook for Java EE learning!!");
+        b.setPrice(12.5F);
+        b.setIsbn("1-84023-742-2");
+        b.setNbOfPages(354);
+        b.setIllustrations(false);
+        
+        
+        //Start EntityTransaction, persist the book and close all
+        et.begin();
+        em.persist(b);
+        et.commit();
+        
+        assertNotNull("Id should not be null", b.getId());
+        
+        
+        // Retrieves all the books from database
+        b = em.createNamedQuery("findBookH2G2", BookForJPA.class).getSingleResult();
+        
+        assertEquals("A Famous cookbook for Java EE learning!!", b.getDescription());
+    }
+    
+    
+    @Test(expected = ConstraintViolationException.class)
+    public void shouldRaiseConstraintViolationExceptionNullTitle(){
+        BookForJPA b = new BookForJPA();
+        // It will rais an exception for this one
+        //b.setTitle("H2G2");
+        b.setDescription("A Famous cookbook for Java EE learning!!");
+        b.setPrice(12.5F);
+        b.setIsbn("1-84023-742-2");
+        b.setNbOfPages(354);
+        b.setIllustrations(false);
+        
+        em.persist(b);
+    }  
     }
 
 
