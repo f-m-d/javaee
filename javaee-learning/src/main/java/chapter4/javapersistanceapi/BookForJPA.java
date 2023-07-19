@@ -4,9 +4,9 @@
  */
 package chapter4.javapersistanceapi;
 
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
@@ -19,12 +19,12 @@ import javax.validation.constraints.Size;
  */
 @Entity
 @NamedQueries({
-    @NamedQuery(name = "findAllBooks", query = "SELECT b FROM BookForJPA"),
-    @NamedQuery(name = "findBookH2G2", query = "SELECT b FROM BookForJPA WHERE b.title = 'H2G2'")
+    @NamedQuery(name = "findAllBooks", query = "SELECT b FROM BookForJPA b"),
+    @NamedQuery(name = "findBookH2G2", query = "SELECT b FROM BookForJPA b WHERE b.title='H2G2'")
 })
-public class BookForJPA {
+public class BookForJPA implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = javax.persistence.GenerationType.AUTO)
     private Long id;
     
     @NotNull
@@ -40,6 +40,15 @@ public class BookForJPA {
     public BookForJPA() {
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    
     
     
     public String getTitle() {

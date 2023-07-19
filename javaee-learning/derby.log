@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+Mon Jul 17 17:59:31 CEST 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-0189-6494-0c50-0000070f2be8 
+on database directory memory:C:\Users\dauri\OneDrive\Documents\GitHub\javaee\javaee-learning\CHAPTER04DB  with class loader sun.misc.Launcher$AppClassLoader@42a57993 
+Loaded from file:/C:/Users/dauri/.m2/repository/org/apache/derby/derby/10.9.1.0/derby-10.9.1.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_371-b11
+user.dir=C:\Users\dauri\OneDrive\Documents\GitHub\javaee\javaee-learning
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
