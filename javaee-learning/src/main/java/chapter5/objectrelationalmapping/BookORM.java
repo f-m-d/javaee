@@ -38,6 +38,83 @@ public class BookORM {
     private String secondaryTableVar1;
     @Column(table = "BOOK-ORM-TABLE-SECONDARY-2")
     private String secondaryTableVar2;
+
+    
+    
+    public BookORM() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Float getPrice() {
+        return price;
+    }
+
+    public void setPrice(Float price) {
+        this.price = price;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public Integer getNbOfPages() {
+        return nbOfPages;
+    }
+
+    public void setNbOfPages(Integer nbOfPages) {
+        this.nbOfPages = nbOfPages;
+    }
+
+    public Boolean getIllustrations() {
+        return illustrations;
+    }
+
+    public void setIllustrations(Boolean illustrations) {
+        this.illustrations = illustrations;
+    }
+
+    public String getSecondaryTableVar1() {
+        return secondaryTableVar1;
+    }
+
+    public void setSecondaryTableVar1(String secondaryTableVar1) {
+        this.secondaryTableVar1 = secondaryTableVar1;
+    }
+
+    public String getSecondaryTableVar2() {
+        return secondaryTableVar2;
+    }
+
+    public void setSecondaryTableVar2(String secondaryTableVar2) {
+        this.secondaryTableVar2 = secondaryTableVar2;
+    }
     
     
     
