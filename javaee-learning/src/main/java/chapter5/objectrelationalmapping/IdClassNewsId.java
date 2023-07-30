@@ -4,6 +4,8 @@
  */
 package chapter5.objectrelationalmapping;
 
+import java.util.Objects;
+
 /**
  *
  * @author dauri
@@ -37,6 +39,30 @@ public class IdClassNewsId {
 
     public void setLanguage(String language) {
         this.language = language;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final IdClassNewsId other = (IdClassNewsId) obj;
+        if (!Objects.equals(this.title, other.title)) {
+            return false;
+        }
+        return Objects.equals(this.language, other.language);
     }
 
     
