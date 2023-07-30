@@ -5,11 +5,14 @@
 package chapter5.objectrelationalmapping;
 
 import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
 
 /**
  *
  * @author dauri
  */
+
+@Entity
 public class NewsWithEmbeededId {
     
     @EmbeddedId
