@@ -4,6 +4,7 @@
  */
 package chapter5.objectrelationalmapping;
 
+import java.util.Date;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,6 +13,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 /**
  *
@@ -25,9 +28,20 @@ public class Track {
     private Long id;
     private String title;
     private Float duration;
+    
     @Basic(fetch = FetchType.LAZY)
     @Lob
     private byte[] wav;
+    
     @Column( name = "description_column", nullable = false, unique = false)
     private String description;
+    
+    @Temporal(TemporalType.DATE)
+    private Date date;
+    @Temporal(TemporalType.TIME)
+    private Date time;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date bothDateAndTime;
+    
+    
 }
