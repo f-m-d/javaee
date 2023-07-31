@@ -62,6 +62,7 @@ public class Track {
     
     
 @Access(AccessType.PROPERTY)
+//@Column( name = "title_column_property")
     public String getTitle() {
         return title;
     }
