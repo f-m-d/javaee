@@ -15,6 +15,7 @@ import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 
 /**
  *
@@ -42,6 +43,10 @@ public class Track {
     private Date time;
     @Temporal(TemporalType.TIMESTAMP)
     private Date bothDateAndTime;
+    
+    
+    @Transient
+    private string opinion;
     
     
 }
