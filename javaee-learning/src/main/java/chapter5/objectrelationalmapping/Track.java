@@ -5,6 +5,8 @@
 package chapter5.objectrelationalmapping;
 
 import java.util.Date;
+import javax.persistence.Access;
+import javax.persistence.AccessType;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -24,11 +26,15 @@ import javax.persistence.Transient;
  * @author dauri
  */
 @Entity
+@Access(AccessType.FIELD)
 public class Track {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    
+    
+    @Column( name = "title_column_field")
     private String title;
     private Float duration;
     
@@ -52,6 +58,21 @@ public class Track {
     
     @Enumerated(EnumType.STRING)
     private CreditCardType creditCardType;
+
+    
+    
+@Access(AccessType.PROPERTY)
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+    
+    
+    
+    
     
     
 }
